@@ -22,42 +22,45 @@
 --hero-gray-70-bg: rgba(46, 47, 66, 0,7);
 --mode-dialogs-bg: #F4F4FD;
 --accent-bg: #E7E9FC;
+--white-bg: #ffffff;
+
+
 
 /* Othere */
 
 }
 
 /*Base Styles*/
-body {
+.page {
     font-family: var(--font-family);
     color: var(--body-txt-cl);
+    background-color: var(--white-bg);
+    font-size: 16px;
     }
     a {
         text-decoration: none;
     }
     ul{list-style: none;}
-    .btn{ /* Button Text */
-
-font-family: 'Roboto';
+    /*logo*/
+    .logo{
+        font-family: 'Raleway';
 font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
+font-weight: 800;
+font-size: 18px;
+line-height: 1.33;
+/* identical to box height, or 133% */
 
-display: flex;
-align-items: center;
-letter-spacing: 0.04em;
 
-color: #FFFFFF;
+letter-spacing: 0.03em;
+text-transform: uppercase;
 
-        background: var(--inter-iris-cl);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px }
-.btn:hover,
-.btn:focus{background: var(--pressed-ocean-cl);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;}
+/* NAVY BLUE */
+
+color: var(--text-navyblue)
+    
+}
+.logo .accent{color:var(--inter-iris-cl)}
+    
     .title{
         font-family: 'Roboto';
 font-style: normal;
@@ -90,11 +93,11 @@ color: var(--shadows-navyblue-cl)
     }
 
 /*Site nav*/
-.site-nav .link{ font-family: 'Roboto';
-font-style: normal;
+.site-nav .link{ 
+
 font-weight: 500;
-font-size: 16px;
-line-height: 24px;
+
+line-height: 1.5;
 /* identical to box height, or 150% */
 
 letter-spacing: 0.02em;
@@ -119,6 +122,110 @@ letter-spacing: 0.02em;
 
 color: var(--pressed-ocean-cl);
 }
+/*Contacts*/
+.contact-link{
+font-style: normal;
+line-height: 1.5;
+/* identical to box height, or 150% */
+
+letter-spacing: 0.02em;
+
+/* SLATE */
+
+color: var(--body-txt-cl);}
+.contact-link:hover,
+.contact-link:focus
+
+.number-link{
+font-style: normal;
+line-height: 1.5;
+/* identical to box height, or 150% */
+
+letter-spacing: 0.02em;
+
+/* SLATE */
+
+color: var(--body-txt-cl);
+}
+.number-link:hover,
+.number-link:focus
+
+
+/*Hero*/
+.hero{background-color:var(--shadows-navyblue-cl);}
+.hero-title{
+font-weight: 1.07;
+font-size: 56px;
+line-height: 60px;
+/* or 107% */
+
+text-align: center;
+letter-spacing: 0.02em;
+
+color: var(--white-bg);
+}
+.btn{ /* Button Text */
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 1.5;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+        background: var(--inter-iris-cl);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px }
+.btn:hover,
+.btn:focus{background: var(--pressed-ocean-cl);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;}
+/*section-features*/
+.section-title{
+    font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+/* identical to box height, or 120% */
+
+letter-spacing: 0.02em;
+
+/* NAVY BLUE */
+
+color: var(--text-navyblue)
+}
+.subtitle{
+    font-weight: 1.5;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+
+letter-spacing: 0.02em;
+
+/* SLATE */
+
+color: var(--body-txt-cl)
+}
+.second-title{
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+/* identical to box height, or 111% */
+
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+
+/* NAVY BLUE */
+
+color: var(--shadows-navyblue-cl)
+}
+/*portfolio*/
 
 
 
@@ -127,28 +234,22 @@ color: var(--pressed-ocean-cl);
 
 
 
-
-
-.footer {
+.footer{
     background-color: var(--text-navyblue);
 }
+.logo-footer{font-family: 'Raleway';
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
 
-.footer-title, .footer-title:hover, .footer-title:active {
-    font-family: var(--title-font);
-    font-weight: 800;
-    font-size: 18px;
-    line-height: calc(21 / 18);
+/* CLOUD */
 
-    align-items: center;
-    letter-spacing: 0.03em;
+color: var(--mode-dialogs-cl)}
+.logo-footer .accent{color: var(--inter-iris-cl);}
 
-    color: var(--activate-iris)
-}
 
-.footer-color {
-    color: var(--bg-light-cloud);
-}
-
-.footer-desc {
-    color: var(--accent);
-}
