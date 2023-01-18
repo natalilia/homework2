@@ -17,6 +17,8 @@
 --accent-cl: #E7E9FC;
 --mode-dialogs-cl: #F4F4FD;
 --overlay-40-cl: rgba(46, 47, 66, 0,4);
+--white-cl:#ffffff;
+
 
 /* Background color */
 --hero-gray-70-bg: rgba(46, 47, 66, 0,7);
@@ -152,7 +154,8 @@ color: var(--body-txt-cl);
 
 
 /*Hero*/
-.hero{background-color:var(--shadows-navyblue-cl);}
+.hero{
+background-color:var(--shadows-navyblue-cl);}
 .hero-title{
 font-weight: 1.07;
 font-size: 56px;
@@ -162,7 +165,7 @@ line-height: 60px;
 text-align: center;
 letter-spacing: 0.02em;
 
-color: var(--white-bg);
+color: var(--white-cl);
 }
 .btn{ /* Button Text */
 
@@ -225,8 +228,152 @@ text-transform: capitalize;
 
 color: var(--shadows-navyblue-cl)
 }
-/*portfolio*/
+/*our-team*/
 
+.team-list{
+    background: var(--light-bg-cl);
+    }
+.person{
+    background-color: var(--white-bg-cl);
+    width: 264px;
+    height: 428px;
+}
+.team-title {
+    text-align: center;
+}
+
+.team-text {
+    text-align: center;
+}
+
+/*portfolio*/
+.btn-portfolio{
+    align-items: center;
+        text-align: center;
+        display: flex;}
+
+.button-filter-all {
+        color: var(--inter-iris-cl);
+        background-color: var(--mode-dialogs-cl);
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 500;
+        height: 48px;
+        width: 69px;
+        left: 0px;
+        top: 0px;
+        cursor: pointer;
+        font-family: inherit;
+        letter-spacing: 0.04em;
+            }
+.button-filter-all:hover,
+.button-filter-all:focus{
+    color: var(--white-bg);
+    background-color: var(--pressed-ocean-cl);}
+
+
+        
+.button-filter-web {
+    color: var(--inter-iris-cl);
+        background-color: var(--mode-dialogs-cl);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    height: 48px;
+    width: 116px;
+    left: 93px;
+    top: 0px;
+    cursor: pointer;
+    font-family: inherit;
+    letter-spacing: 0.04em;
+    }
+.button-filter-web:hover,
+.button-filter-web:focus{
+    color: var(--white-bg);
+    background-color: var(--pressed-ocean-cl);}
+.button-filter-app {
+    color: var(--inter-iris-cl);
+    background-color: var(--mode-dialogs-cl);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    height: 48px;
+    width: 78px;
+    left: 93px;
+    top: 0px;
+    cursor: pointer;
+    font-family: inherit;
+    letter-spacing: 0.04em;
+    }
+.button-filter-app:hover,
+.button-filter-app:focus {
+    color: var(--white-bg);
+    background-color: var(--pressed-ocean-cl);}
+
+.button-filter-design {
+    color: var(--inter-iris-cl);
+    background-color: var(--mode-dialogs-cl);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    height: 48px;
+    width: 101px;
+    left: 93px;
+    top: 0px;
+    cursor: pointer;
+    font-family: inherit;
+    letter-spacing: 0.04em;
+}
+.button-filter-design:hover,
+.button-filter-design:focus {
+    color: var(--white-bg);
+    background-color: var(--pressed-ocean-cl);}
+
+.button-filter-marketing {
+    color: var(--inter-iris-cl);
+    background-color: var(--mode-dialogs-cl);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    height: 48px;
+    width: 126px;
+    left: 93px;
+    top: 0px;
+    cursor: pointer;
+    font-family: inherit;
+    letter-spacing: 0.04em;
+}
+.button-filter-marketing:hover,
+.button-filter-marketing:focus {
+    color: var(--white-bg);
+    background-color: var(--pressed-ocean-cl);}
+
+
+
+.titleportffolio{
+font-weight: 500;
+font-size: 20px;
+line-height: 1,2;
+/* identical to box height, or 120% */
+
+letter-spacing: 0.02em;
+
+/* NAVY BLUE */
+
+color: var(--shadows-navyblue-cl);
+}
+.descriptionportfolio{
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+/* identical to box height, or 150% */
+
+letter-spacing: 0.02em;
+
+/* SLATE */
+
+color: var(--body-txt-cl);
+}
 
 
 
@@ -251,5 +398,16 @@ text-transform: uppercase;
 
 color: var(--mode-dialogs-cl)}
 .logo-footer .accent{color: var(--inter-iris-cl);}
+.text-footer {
+font-weight: 1.5;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
 
+letter-spacing: 0.02em;
+
+/* CORNFLOWER */
+
+color: var(--accent-cl);
+}
 
