@@ -132,11 +132,26 @@ line-height: 1.5;
 
 letter-spacing: 0.02em;
 
+
 /* SLATE */
 
-color: var(--body-txt-cl);}
+color: var(--body-txt-cl);
+}
 .contact-link:hover,
-.contact-link:focus
+.contact-link:focus{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+/* identical to box height, or 150% */
+
+letter-spacing: 0.02em;
+
+/* OCEAN */
+
+color: var(--pressed-ocean-cl);
+}
 
 .number-link{
 font-style: normal;
@@ -150,12 +165,23 @@ letter-spacing: 0.02em;
 color: var(--body-txt-cl);
 }
 .number-link:hover,
-.number-link:focus
+.number-link:focus{font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+/* identical to box height, or 150% */
+
+letter-spacing: 0.02em;
+
+/* OCEAN */
+
+color: var(--pressed-ocean-cl)}
 
 
 /*Hero*/
 .hero{
-background-color:var(--shadows-navyblue-cl);}
+background-color: var(--shadows-navyblue-cl);}
 .hero-title{
 font-weight: 1.07;
 font-size: 56px;
@@ -382,7 +408,7 @@ color: var(--body-txt-cl);
 
 
 .footer{
-    background-color: var(--text-navyblue);
+    background-color: var(--body-txt-cl);
 }
 .logo-footer{font-family: 'Raleway';
 font-style: normal;
